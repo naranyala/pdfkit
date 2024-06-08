@@ -1,26 +1,39 @@
 {
-  "name": "scripts",
-  "module": "index.ts",
+  "name": "pdfkit-vite",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "run:tailwind": "",
+    "run:static-site": "",
     "lib:latest": "bunx npm-check-updates -u && bun install",
     "lib:check": "bunx npm-check-updates",
     "pdfkit:perfile": "bun run src/markdown2pdf-perfile.js",
     "pdfkit:batch": "bun run src/markdown2pdf-batch.js",
     "pdfkit:cover": "bun run src/create-cover.js",
-    "pdfkit:merge": "bun run src/merge-pdfs-in-dir.js"
+    "pdfkit:merge": "bun run src/merge-pdfs-in-dir.js",
+    "pdfkit:html-perfile": "bun run src/markdown2html-perfile.js"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.2.13"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.4.5"
   },
   "dependencies": {
+    "marked": "^12.0.2",
     "md-to-pdf": "^5.2.4",
     "pdf-lib": "^1.17.1",
     "pdfkit": "^0.15.0",
     "potrace": "^2.1.8",
+    "prompt-sync": "^4.2.0",
     "readline-sync": "^1.4.10"
   }
 }
