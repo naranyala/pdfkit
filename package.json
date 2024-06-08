@@ -1,0 +1,22 @@
+{
+  "name": "scripts",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "lib:latest": "bunx npm-check-updates -u && bun install",
+    "lib:check": "bunx npm-check-updates"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "md-to-pdf": "^5.2.4",
+    "pdf-lib": "^1.17.1",
+    "pdfkit": "^0.15.0",
+    "potrace": "^2.1.8",
+    "readline-sync": "^1.4.10"
+  }
+}
