@@ -13,9 +13,8 @@
 
 to use this tools, we need to install "puppeteer"
 
-```sh
-bun install
-```
+- clone the project, install libs `bun install`
+- create system shell aliases
 
 ### perfile
 
@@ -53,7 +52,7 @@ bun run pdfkit:cover
 
 ```sh
 
-bun run pdfkit:merge <filanem>
+bun run pdfkit:merge <filename>
 
 # or
 
