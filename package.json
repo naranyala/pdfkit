@@ -4,7 +4,11 @@
   "type": "module",
   "scripts": {
     "lib:latest": "bunx npm-check-updates -u && bun install",
-    "lib:check": "bunx npm-check-updates"
+    "lib:check": "bunx npm-check-updates",
+    "pdfkit:perfile": "bun run src/markdown2pdf-perfile.js",
+    "pdfkit:batch": "bun run src/markdown2pdf-batch.js",
+    "pdfkit:cover": "bun run src/create-cover.js",
+    "pdfkit:merge": "bun run src/merge-pdfs-in-dir.js"
   },
   "devDependencies": {
     "@types/bun": "latest"

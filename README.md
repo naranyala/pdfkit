@@ -1,7 +1,13 @@
 
 # pdfkit
 
-write your book faster; iterate more
+> write your book faster; iterate more
+
+to use this tools we need install "puppeteer"
+
+```sh
+bun install
+```
 
 ## main features
 
