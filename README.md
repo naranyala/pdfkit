@@ -3,14 +3,64 @@
 
 > write your book faster; iterate more
 
-to use this tools we need install "puppeteer"
-
-```sh
-bun install
-```
-
 ## main features
 
 - markdown to pdf (perfile or batch)
 - create pdf cover
 - merge pdfs in specific directory
+
+## usage
+
+to use this tools, we need to install "puppeteer"
+
+```sh
+bun install
+```
+
+### perfile
+
+```sh
+bun run pdfkit:perfile <filename>
+
+# or
+
+bun run pdfkit:perfile <path/filename>
+
+```
+
+### batch
+
+```sh
+
+bun run pdfkit:batch <filename>
+
+# or
+
+bun run pdfkit:batch <path/filename>
+
+```
+
+### create cover
+
+
+```sh
+
+bun run pdfkit:cover
+
+```
+
+### merge pdfs
+
+```sh
+
+bun run pdfkit:merge <filanem>
+
+# or
+
+bun run pdfkit:merge <path/filename>
+
+```
+
+## upcoming features
+
+- [WIP] auto generated TOC (table of contents)
