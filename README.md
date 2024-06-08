@@ -1,15 +1,10 @@
+
 # pdfkit
 
-To install dependencies:
+write your book faster; iterate more
 
-```bash
-bun install
-```
+## main features
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.12. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+- markdown to pdf (perfile or batch)
+- create pdf cover
+- merge pdfs in specific directory
